@@ -7,8 +7,8 @@
 
 class ITHistSvc;
 
-namespace fcc {
-  class ParticleCollection;
+namespace edm4hep {
+  class ReconstrucedParticleCollection;
   class MCParticleCollection;
 }
 
@@ -31,8 +31,8 @@ public:
   virtual StatusCode finalize() final;
 
 private:
-  DataHandle<fcc::MCParticleCollection> m_simParticles{"SimParticles", Gaudi::DataHandle::Reader, this};
-  DataHandle<fcc::ParticleCollection> m_recParticles{"RecParticles", Gaudi::DataHandle::Reader, this};
+  DataHandle<edm4hep::MCParticleCollection> m_simParticles{"SimParticles", Gaudi::DataHandle::Reader, this};
+  DataHandle<edm4hep::ReconstructedParticleCollection> m_recParticles{"RecParticles", Gaudi::DataHandle::Reader, this};
 
   /// Pointer to the interface of histogram service
   SmartIF<ITHistSvc> m_histSvc;

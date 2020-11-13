@@ -2,8 +2,8 @@
 
 #include "GaudiKernel/ITHistSvc.h"
 
-#include "datamodel/MCParticleCollection.h"
-#include "datamodel/ParticleCollection.h"
+#include "edm4hep/MCParticleCollection.h"
+#include "edm4hep/ReconstructedParticleCollection.h"
 
 #include "CLHEP/Vector/ThreeVector.h"
 #include "TH1F.h"

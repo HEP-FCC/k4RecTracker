@@ -4,9 +4,8 @@
 
 #include "DetInterface/IGeoSvc.h"
 
-#include "datamodel/PositionedTrackHitCollection.h"
-#include "datamodel/TrackHitCollection.h"
-#include "datamodel/TrackStateCollection.h"
+#include "edm4hep/TrackerHitCollection.h"
+#include "edm4hep/MCRecoTrackerAssociationCollection.h"
 
 
 DECLARE_COMPONENT(TruthSeedingTool)
